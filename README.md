@@ -4,13 +4,15 @@ A new Flutter project using library : [Bluetooth Print](https://pub.dev/packages
 
 ## WARNING!!!
 
-Based on [this link](https://github.com/kakzaki/blue_thermal_printer/issues/70#issuecomment-813293797), please replace at line 22-27 with this codelab
+Based on [this link](https://github.com/kakzaki/blue_thermal_printer/issues/70#issuecomment-813293797), please replace at line 22-27 with this code
 
-``BluetoothPrint._() {
+```
+BluetoothPrint._() {
     _channel.setMethodCallHandler((MethodCall call) async{
       _methodStreamController.add(call);
     });
-  }``
+}
+```
 
 ## Getting Started
 
